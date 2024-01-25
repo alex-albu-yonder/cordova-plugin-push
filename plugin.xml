@@ -116,7 +116,7 @@
     </config-file>
 
     <source-file src="src/ios/AppDelegate+notification.m"/>
-    <source-file src="src/ios/PushPlugin.m"/>
+    <source-file src="src/ios/PushPlugin.swift"/>
     <header-file src="src/ios/AppDelegate+notification.h"/>
     <header-file src="src/ios/PushPlugin.h"/>
 
