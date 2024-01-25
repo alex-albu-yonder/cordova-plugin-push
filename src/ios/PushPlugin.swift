@@ -29,7 +29,7 @@ class PushPlugin: CDVPlugin {
             if let error = error {
                 print("Error getting FCM registration token: \(error)")
             } else if let token = token {
-                print("FCM registration token: \(token)")
+                print("FCM registration token - SWIFT VERSION: \(token)")
                 self.setFcmRegistrationToken(token)
                 let message = "Remote InstanceID token: \(token)"
                 
@@ -46,7 +46,7 @@ class PushPlugin: CDVPlugin {
     }
 
     func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
-        print("FCM registration token refreshed: \(fcmToken)")
+        print("FCM registration token refreshed - SWIFT VERSION: \(fcmToken)")
         initRegistration()
     }
 
